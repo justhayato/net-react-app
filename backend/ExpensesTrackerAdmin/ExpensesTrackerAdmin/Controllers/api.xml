@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExpensesTrackerAdmin.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:ExpensesTrackerAdmin.WebAPI.Controllers.CustomBaseController">
+            <summary>
+            Custom Base Controller for WebAPI
+            </summary>
+        </member>
+        <member name="T:ExpensesTrackerAdmin.WebAPI.Controllers.v1.AccountController">
+            <summary>
+            Account Endpoints
+            </summary>
+        </member>
+        <member name="M:ExpensesTrackerAdmin.WebAPI.Controllers.v1.AccountController.#ctor(ExpensesTrackerAdmin.Services.Interfaces.IAccountService,ExpensesTrackerAdmin.Services.Interfaces.IJwtService,ExpensesTrackerAdmin.Services.Interfaces.IUserService,Microsoft.Extensions.Logging.ILogger{ExpensesTrackerAdmin.WebAPI.Controllers.v1.AccountController})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="accountService"></param>
+            <param name="jwtService"></param>
+            <param name="logger"></param>
+            <param name="userService"></param>
+        </member>
+        <member name="M:ExpensesTrackerAdmin.WebAPI.Controllers.v1.AccountController.Login(ExpensesTrackerAdmin.Models.DTOs.LoginUserDTO)">
+            <summary>
+            Login user with username and password.
+            </summary>
+            <param name="loginUser">User Details</param>
+            <returns></returns>
+        </member>
+        <member name="M:ExpensesTrackerAdmin.WebAPI.Controllers.v1.AccountController.Logout(ExpensesTrackerAdmin.Models.DTOs.UserDTO)">
+            <summary>
+            Logs out the logged in user.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ExpensesTrackerAdmin.WebAPI.Controllers.v1.AccountController.RegenerateTokens(ExpensesTrackerAdmin.Models.DTOs.TokenDTO)">
+            <summary>
+            Regnerate new JWT and RefreshTokens
+            </summary>
+            <param name="tokens">JWT and RefreshToken</param>
+            <returns>TokenDTO</returns>
+        </member>
+        <member name="T:ExpensesTrackerAdmin.WebAPI.Controllers.v1.UserController">
+            <summary>
+            User Endpoints
+            </summary>
+        </member>
+        <member name="M:ExpensesTrackerAdmin.WebAPI.Controllers.v1.UserController.#ctor(ExpensesTrackerAdmin.Services.Interfaces.IUserService,Microsoft.Extensions.Logging.ILogger{ExpensesTrackerAdmin.WebAPI.Controllers.v1.UserController})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="userService">User service Layer</param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:ExpensesTrackerAdmin.WebAPI.Controllers.v1.UserController.GetUsers">
+            <summary>
+            Retrieves list of exising users.
+            </summary>
+            <returns>List of all UserDTO</returns>
+        </member>
+        <member name="M:ExpensesTrackerAdmin.WebAPI.Controllers.v1.UserController.GetUserById(System.String)">
+            <summary>
+            Retrieves an existing user by id.
+            </summary>
+            <param name="id">User's ID</param>
+            <returns>UserDTO</returns>
+        </member>
+        <member name="M:ExpensesTrackerAdmin.WebAPI.Controllers.v1.UserController.CreateUser(ExpensesTrackerAdmin.Models.DTOs.NewUserDTO)">
+            <summary>
+            Creates a new user.
+            </summary>
+            <param name="newUser">New user details</param>
+            <returns>UserDTO</returns>
+        </member>
+        <member name="M:ExpensesTrackerAdmin.WebAPI.Controllers.v1.UserController.UpdateUser(ExpensesTrackerAdmin.Models.DTOs.UpdateUserDTO)">
+            <summary>
+            /// Updates an existing user.
+            </summary>
+            <param name="updateUser">User details</param>
+            <returns>none</returns>
+        </member>
+        <member name="M:ExpensesTrackerAdmin.WebAPI.Controllers.v1.UserController.DeleteUser(System.String)">
+            <summary>
+            Deletes an existing user.
+            </summary>
+            <param name="id">User Id</param>
+            <returns>none</returns>
+        </member>
+        <member name="T:ExpensesTrackerAdmin.WebAPI.Middlewares.LoggingMiddleware">
+            <summary>
+            Middleware for logging requests with custom Correlation ID.
+            </summary>
+        </member>
+        <member name="M:ExpensesTrackerAdmin.WebAPI.Middlewares.LoggingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger{ExpensesTrackerAdmin.WebAPI.Middlewares.LoggingMiddleware})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="next"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:ExpensesTrackerAdmin.WebAPI.Middlewares.LoggingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Logging function
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ExpensesTrackerAdmin.WebAPI.Middlewares.LoggingMiddlewareMiddlewareExtensions">
+            <summary>
+            Extension Method
+            </summary>
+        </member>
+        <member name="M:ExpensesTrackerAdmin.WebAPI.Middlewares.LoggingMiddlewareMiddlewareExtensions.UseLoggingMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Extension Method
+            </summary>
+        </member>
+    </members>
+</doc>
